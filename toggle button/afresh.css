@@ -1,0 +1,29 @@
+body{
+    padding-top: 70px;
+}
+
+
+
+.navbar-inverse {
+    background-color
+    :yellowgreen;
+    border-color
+    :blue;
+}
+hr{
+    padding-top: 60px;
+    width: 400px;
+
+
+}
+
+
+.navbar-inverse .navbar-nav > li > a{
+    color: white;
+    font-size: large;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+    font-weight: 700;
+}
