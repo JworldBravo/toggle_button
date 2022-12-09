@@ -13,13 +13,11 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button onclick="getElementById('#bs-navbar-demo').innerHTML=.navbar-header" type="button" class="navbar-toggle collapsed" data-toggle="collapse" target="#bs-navbar-demo" aria-expanded="true">
-                  <span class="sr-only">Toggle-navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
                 <a href="#" class="navbar-brand">BeautyQ</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-navbar-demo">
@@ -42,9 +40,15 @@
     
 
 
-    <script type="text/javascript" src="https://code.jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+      // Enable toggle button functionality
+      $('.navbar-toggle').click(function() {
+        $('.navbar-collapse').toggle();
+      });
+    </script>
+    
  
 
 </body>
